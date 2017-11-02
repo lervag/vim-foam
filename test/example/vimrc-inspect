@@ -1,0 +1,14 @@
+set nocompatible
+let &runtimepath = '~/.vim/bundle/vim-foam,' . &runtimepath
+filetype plugin indent on
+syntax enable
+
+nnoremap q :qall!<cr>
+nnoremap zS :echo SynNames()<cr>
+
+function! SynNames()
+  return join(map(synstack(line('.'), col('.')),
+        \ 'synIDattr(v:val, ''name'')'), ' -> ')
+endfunction
+
+silent edit constant/transportProperties

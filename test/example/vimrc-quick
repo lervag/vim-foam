@@ -1,0 +1,14 @@
+source vimrc-inspect
+
+for s:line in split(execute('syntax'), "\n")
+  echo s:line
+endfor
+
+for s:line in filter(split(execute('scriptnames'), "\n"), 'v:val =~# ''foam''')
+  echo s:line
+endfor
+
+echo b:current_syntax
+echo ''
+
+quit
