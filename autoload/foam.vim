@@ -10,6 +10,10 @@ endfunction
 
 " }}}1
 function! foam#init() " {{{1
+  setlocal tabstop=4
+  setlocal shiftwidth=4
+  setlocal expandtab
+
   let b:foam = {}
   let b:foam.type = s:get_foam_type()
 endfunction
