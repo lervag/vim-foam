@@ -13,6 +13,7 @@ function! foam#init() " {{{1
   setlocal tabstop=4
   setlocal shiftwidth=4
   setlocal expandtab
+  setlocal omnifunc=foam#complete#omnifunc
 
   let b:foam = {}
   let b:foam.type = s:get_foam_type()
