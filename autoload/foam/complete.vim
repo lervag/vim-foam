@@ -91,5 +91,3 @@ let g:foam#complete#re_refresh_ncm = [
       \]
 
 " }}}1
-
-" vim: fdm=marker sw=2

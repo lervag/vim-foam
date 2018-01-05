@@ -124,5 +124,3 @@ highlight link foamHeaderFieldValue Identifier
 " }}}1
 
 let b:current_syntax = 'foam'
-
-" vim: fdm=marker
