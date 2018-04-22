@@ -86,8 +86,10 @@ let s:completers = map(
       \ 'v:val[1]')
 
 let g:foam#complete#re_refresh_ncm = [
-      \ '^\\[A-Za-z]+\s+[A-Za-z]*',
-      \ '^\\[A-Za-z]*',
+      \ '^[A-Za-z]+\s+[A-Za-z]*',
+      \ '^[A-Za-z]*',
       \]
+
+let g:foam#complete#re_refresh_deoplete = g:foam#complete#re_refresh_ncm
 
 " }}}1
