@@ -1,6 +1,6 @@
 function! foam#ftdetect() " {{{1
-  if did_filetype()       
-    return               
+  if did_filetype()
+    return
   endif
 
   if !empty(filter(getline(1, 15), "v:val =~# 'FoamFile'"))
@@ -34,7 +34,7 @@ function! s:get_foam_type() " {{{1
         \ 'thermophysicalProperties' : 'thermophysicalProperties',
         \ 'dynamicMeshDict' : 'dynamicMeshDict',
         \}
-  
+
   for line in getline(1, 15)
     for [name, re] in items(types)
       if line =~# re
