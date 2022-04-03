@@ -1,5 +1,9 @@
 # vim-foam
 
+2022-04-03 **Project status**: I no longer expect to work with OpenFOAM. As such, I have no
+intention to keep this project alive. It is archived and anyone is free to fork
+if they are interested.
+
 This is a filetype plugin for OpenFOAM. It is currently pre-alpha, and the
 development will be sporadic. The initial goal is to get up to par with
 [vimExtensionOpenFOAM](https://bitbucket.org/shor-ty/vimextensionopenfoam.git).
